@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
@@ -10,14 +10,14 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>42D05639-3F0F-4760-8214-317167E4173D</string>
+				<string>E76DA661-024A-451B-B012-DA52F30776F0</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
 			</dict>
 		</array>
-		<key>BA17BE41-176A-4E9A-B958-A3F0BEA36829</key>
+		<key>E76DA661-024A-451B-B012-DA52F30776F0</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
@@ -43,28 +43,48 @@
 			<key>config</key>
 			<dict>
 				<key>argumenttype</key>
-				<integer>1</integer>
+				<integer>2</integer>
 				<key>escaping</key>
-				<integer>62</integer>
+				<integer>5</integer>
 				<key>keyword</key>
-				<string>test feedback</string>
+				<string>switchruby</string>
 				<key>runningsubtext</key>
 				<string>working...</string>
 				<key>script</key>
-				<string>/usr/bin/ruby ./main.rb {query}</string>
+				<string>/usr/bin/ruby ./feedback.rb</string>
 				<key>subtext</key>
-				<string>Ruby Based Workflow Template</string>
+				<string>Switch System Ruby from 1.8.7 to 2.0.0 and viceversa</string>
 				<key>title</key>
-				<string>Test Alfred Feedback</string>
+				<string>Switch System Ruby</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
-				<true/>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
 			<string>21557827-8003-42B7-A042-16D4C9278FEC</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>applescript</key>
+				<string>on alfred_script(q)
+  #do shell script "/usr/bin/ruby switch.rb" with administrator privileges
+  return "1.8"
+end alfred_script</string>
+				<key>cachescript</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.applescript</string>
+			<key>uid</key>
+			<string>E76DA661-024A-451B-B012-DA52F30776F0</string>
+			<key>version</key>
+			<integer>0</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -80,41 +100,16 @@
 				<key>sticky</key>
 				<false/>
 				<key>text</key>
-				<string>{query}</string>
+				<string>Ruby version switched to {query}</string>
 				<key>title</key>
-				<string>Ruby Script</string>
+				<string>Switch System Ruby</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
 			<string>42D05639-3F0F-4760-8214-317167E4173D</string>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>escaping</key>
-				<integer>63</integer>
-				<key>keyword</key>
-				<string>test rescue feedback</string>
-				<key>runningsubtext</key>
-				<string>...</string>
-				<key>script</key>
-				<string>/usr/bin/ruby ./main_with_rescue_feedback.rb {query}</string>
-				<key>subtext</key>
-				<string>Ruby Based Workflow Template</string>
-				<key>title</key>
-				<string>Test Alfred Rescue Feedback</string>
-				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>BA17BE41-176A-4E9A-B958-A3F0BEA36829</string>
+			<key>version</key>
+			<integer>0</integer>
 		</dict>
 	</array>
 	<key>readme</key>
@@ -124,17 +119,17 @@
 		<key>21557827-8003-42B7-A042-16D4C9278FEC</key>
 		<dict>
 			<key>ypos</key>
-			<real>250.0</real>
+			<real>10</real>
 		</dict>
 		<key>42D05639-3F0F-4760-8214-317167E4173D</key>
 		<dict>
 			<key>ypos</key>
-			<real>140.0</real>
+			<real>10</real>
 		</dict>
-		<key>BA17BE41-176A-4E9A-B958-A3F0BEA36829</key>
+		<key>E76DA661-024A-451B-B012-DA52F30776F0</key>
 		<dict>
 			<key>ypos</key>
-			<real>370.0</real>
+			<real>10</real>
 		</dict>
 	</dict>
 	<key>webaddress</key>
