@@ -10,14 +10,14 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>E76DA661-024A-451B-B012-DA52F30776F0</string>
+				<string>7BAA9B5F-76E9-4BFC-A064-22CD39D27020</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
 			</dict>
 		</array>
-		<key>E76DA661-024A-451B-B012-DA52F30776F0</key>
+		<key>7BAA9B5F-76E9-4BFC-A064-22CD39D27020</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
@@ -71,24 +71,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>applescript</key>
-				<string>on alfred_script(q)
-  #do shell script "/usr/bin/ruby switch.rb" with administrator privileges
-  return "1.8"
-end alfred_script</string>
-				<key>cachescript</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.applescript</string>
-			<key>uid</key>
-			<string>E76DA661-024A-451B-B012-DA52F30776F0</string>
-			<key>version</key>
-			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>lastpathcomponent</key>
 				<false/>
 				<key>onlyshowifquerypopulated</key>
@@ -100,7 +82,7 @@ end alfred_script</string>
 				<key>sticky</key>
 				<false/>
 				<key>text</key>
-				<string>Ruby version switched to {query}</string>
+				<string>version switched to {query}</string>
 				<key>title</key>
 				<string>Switch System Ruby</string>
 			</dict>
@@ -108,6 +90,24 @@ end alfred_script</string>
 			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
 			<string>42D05639-3F0F-4760-8214-317167E4173D</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>4</integer>
+				<key>script</key>
+				<string>/usr/bin/osascript -e 'do shell script "/usr/bin/ruby switch.rb" with administrator privileges'
+echo "{query}"</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>7BAA9B5F-76E9-4BFC-A064-22CD39D27020</string>
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
@@ -126,7 +126,7 @@ end alfred_script</string>
 			<key>ypos</key>
 			<real>10</real>
 		</dict>
-		<key>E76DA661-024A-451B-B012-DA52F30776F0</key>
+		<key>7BAA9B5F-76E9-4BFC-A064-22CD39D27020</key>
 		<dict>
 			<key>ypos</key>
 			<real>10</real>
