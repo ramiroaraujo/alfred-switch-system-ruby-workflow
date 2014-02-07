@@ -10,7 +10,7 @@ GEM
       terminal-notifier (>= 1.5.0)
     builder (3.2.2)
     fuzzy_match (2.0.4)
-    gyoku (1.1.0)
+    gyoku (1.1.1)
       builder (>= 2.1.2)
     moneta (0.7.20)
     nori (2.3.0)
