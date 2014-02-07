@@ -23,6 +23,7 @@ Alfred.with_friendly_error do |alfred|
 
   fb.add_item({
       :title => "Switch Ruby version to #{new_version}",
+      :subtitle => 'It will ask for administration privileges to continue',
       :arg => new_version,
       :valid => 'yes',
   })
@@ -30,6 +31,7 @@ Alfred.with_friendly_error do |alfred|
   # show current ruby version
   fb.add_item({
       :title => "Current Ruby Version: #{current_version}",
+      :subtitle => 'This is the current Ruby version installed in /usr/bin/ruby',
       :valid => 'no'
   })
 
