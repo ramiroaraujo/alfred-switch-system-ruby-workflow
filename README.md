@@ -5,7 +5,7 @@ A simple Ruby development workflow for Mavericks to switch system Ruby between 2
 ## Usage
 
 Type the ```switchruby``` keyword to see the menu option:
-![switch ruby](https://raw.github.com/ramiroaraujo/alfred-switch-ruby-workflow/master/screenshots/switch-ruby.png)
+![switch ruby](https://raw.github.com/ramiroaraujo/alfred-switch-system-ruby-workflow/master/screenshots/switch-ruby.png)
 
 The only actionable option is the first, which will switch between Ruby 2.0.0 and Ruby 1.8.7. The workflow will ask por Administration Privileges to continue.
 
