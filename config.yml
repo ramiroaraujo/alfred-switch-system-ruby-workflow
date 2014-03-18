@@ -1,13 +1,13 @@
 ## workflow build config
 
 # id and name for the workflow (bundle id = domain.id)
-id: alfred-switch-ruby-version-workflow
+id: alfred-switch-system-ruby-workflow
 
 # base domain
 domain: com.tumblr.ramiroaraujo
 
 name: Switch System Ruby
-description: A symple workflow for Ruby development, specifically for switching the system Ruby version to test workflows.
+description: A simple workflow for Ruby development, specifically for switching the system Ruby version to test workflows.
 created_by: Ramiro Araujo
 website: https://github.com/ramiroaraujo/alfred-switch-system-ruby-workflow
 readme: readme

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string>com.tumblr.ramiroaraujo.alfred-switch-ruby-version-workflow</string>
+	<string>com.tumblr.ramiroaraujo.alfred-switch-system-ruby-workflow</string>
 	<key>connections</key>
 	<dict>
 		<key>21557827-8003-42B7-A042-16D4C9278FEC</key>
@@ -32,7 +32,7 @@
 	<key>createdby</key>
 	<string>Ramiro Araujo</string>
 	<key>description</key>
-	<string>A symple workflow for Ruby development, specifically for switching the system Ruby version to test workflows.</string>
+	<string>A simple workflow for Ruby development, specifically for switching the system Ruby version to test workflows.</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
@@ -74,8 +74,8 @@
 				<key>escaping</key>
 				<integer>4</integer>
 				<key>script</key>
-				<string>/usr/bin/osascript -e 'tell current application to activate' -e 'do shell script "/usr/bin/ruby switch.rb" with administrator privileges'
-echo "{query}"</string>
+				<string>/usr/bin/osascript -e &#39;tell current application to activate&#39; -e &#39;do shell script &quot;/usr/bin/ruby switch.rb&quot; with administrator privileges&#39;
+				echo &quot;{query}&quot;</string>
 				<key>type</key>
 				<integer>0</integer>
 			</dict>
@@ -119,17 +119,17 @@ echo "{query}"</string>
 		<key>21557827-8003-42B7-A042-16D4C9278FEC</key>
 		<dict>
 			<key>ypos</key>
-			<real>10</real>
+			<real>10.0</real>
 		</dict>
 		<key>42D05639-3F0F-4760-8214-317167E4173D</key>
 		<dict>
 			<key>ypos</key>
-			<real>10</real>
+			<real>10.0</real>
 		</dict>
 		<key>7BAA9B5F-76E9-4BFC-A064-22CD39D27020</key>
 		<dict>
 			<key>ypos</key>
-			<real>10</real>
+			<real>10.0</real>
 		</dict>
 	</dict>
 	<key>webaddress</key>

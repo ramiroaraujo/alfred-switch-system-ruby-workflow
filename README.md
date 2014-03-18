@@ -12,7 +12,7 @@ Type the ```switchruby``` keyword to see the menu option:
 The only actionable option is the first, which will switch between Ruby 2.0.0 and Ruby 1.8.7. The workflow will ask por Administration Privileges to continue.
 
 ## Installation
-Download the [alfred-switch-ruby.alfredworkflow](https://github.com/ramiroaraujo/alfred-switch-ruby-workflow/raw/master/alfred-switch-ruby.alfredworkflow) and import to Alfred 2.
+Download the [alfred-switch-ruby.alfredworkflow](https://github.com/ramiroaraujo/alfred-switch-ruby-workflow/raw/master/alfred-switch-system-ruby.alfredworkflow) and import to Alfred 2.
 
 ## Changelog
 * _2014-02-07_ - Released
