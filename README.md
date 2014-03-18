@@ -2,6 +2,8 @@
 
 A simple Ruby development workflow for Mavericks to switch system Ruby between 2.0.0 and 1.8.7.
 
+My user case is specifically for Alfred workflows development, since Alfred uses the system Ruby, and not the binaries from RVM or rbenv. It might come handy in similar situations where system Ruby is needed.
+
 ## Usage
 
 Type the ```switchruby``` keyword to see the menu option:
