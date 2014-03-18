@@ -107,7 +107,7 @@ end
 
 desc 'Create packed Workflow'
 task :export => [:config] do
-  ruby_version = RbConfig::CONFIG['ruby_version']
+  ruby_versions = ['1.8', '2.0.0']
 
   filename = "#{$config['id'].chomp '-workflow'}.alfredworkflow"
   output = 'output'
@@ -125,17 +125,19 @@ task :export => [:config] do
   Dir.chdir('bundle/ruby') do
     Dir.foreach('.') do |dir|
       next if dir == '.' || dir == '..'
-      Dir.chdir("bundle/ruby/#{ruby_version}") do
-        Dir.foreach('.') do |dir|
-          FileUtils.rmtree dir if %w(build_info cache doc specifications).include? dir
-        end
-        Dir.chdir('gems') do
+      ruby_versions.each do |version|
+        Dir.chdir(version) do
           Dir.foreach('.') do |dir|
-            next if dir == '.' || dir == '..'
-            Dir.chdir(dir) do
-              Dir.foreach('.') do |subdir|
-                next if subdir == '.' || subdir == '..'
-                FileUtils.rmtree subdir if !(%w(. .. lib).include? subdir)
+            FileUtils.rmtree dir if %w(build_info cache doc specifications).include? dir
+          end
+          Dir.chdir('gems') do
+            Dir.foreach('.') do |dir|
+              next if dir == '.' || dir == '..'
+              Dir.chdir(dir) do
+                Dir.foreach('.') do |subdir|
+                  next if subdir == '.' || subdir == '..'
+                  FileUtils.rmtree subdir if !(%w(. .. lib).include? subdir)
+                end
               end
             end
           end
