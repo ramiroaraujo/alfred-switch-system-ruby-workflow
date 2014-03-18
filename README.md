@@ -1,4 +1,4 @@
-# Switch Ruby Workflow for Alfred App
+# Switch System Ruby Workflow for Alfred App
 
 A simple Ruby development workflow for Mavericks to switch system Ruby between 2.0.0 and 1.8.7.
 
